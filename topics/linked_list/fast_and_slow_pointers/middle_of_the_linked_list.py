@@ -9,7 +9,7 @@ Space Complexity: O(1)
     Space used by slow and fast
 """
 
-def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
         slow = head
         fast = head
         while fast and fast.next:
