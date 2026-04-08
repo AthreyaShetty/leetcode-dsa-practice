@@ -74,18 +74,6 @@ https://leetcode.com/u/AthreyaShetty/
 
 ---
 
-## 🏅 LeetCode Achievements
-
-![LeetCode Stats](https://leetcode.com/medal/?showImg=0&id=9507459&isLevel=false)
-
-<p align="center">
-  <img src="https://img.shields.io/badge/50_Days_Streak-2026-success" />
-  <img src="https://img.shields.io/badge/100_Days_Streak-2024-blue" />
-  <img src="https://img.shields.io/badge/50_Days_Streak-2024-orange" />
-</p>
-
----
-
 ## 🤝 Contributions
 
 This is a personal learning repository, but suggestions and improvements are always welcome!
