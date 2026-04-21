@@ -4,6 +4,9 @@ Link: https://leetcode.com/problems/subarray-product-less-than-k/
 Difficulty: Medium
 Time Complexity: O(n)
 Space Complexity: O(1)
+
+Pattern:
+Sliding Window
 """
 
 def numSubarrayProductLessThanK(nums: list[int], k: int) -> int:
