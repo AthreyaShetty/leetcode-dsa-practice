@@ -7,6 +7,7 @@ Space Complexity: O(1)
 
 Pattern:
 Sliding Window
+------------------------
 """
 
 def numSubarrayProductLessThanK(nums: list[int], k: int) -> int:
