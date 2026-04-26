@@ -12,6 +12,8 @@ Space Complexity: O(n)
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# Solution 1
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         if not root:
@@ -26,4 +28,20 @@ class Solution:
         if high > root.val:
             ans += self.rangeSumBST(root.right, low, high)
         
+        return ans
+    
+# Solution 2
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        stack = [root]
+        asn = 0
+        while stack:
+            node = stack.pop()
+            if low <= node.val <= high:
+                ans += node.val
+            
+            if node.left and node.left > low:
+                stack.append(node.left)
+            if node.right and node.right < high:
+                stack.append(node.right)
         return ans
