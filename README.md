@@ -1,5 +1,4 @@
-# 🚀 LeetCode DSA Practice 2026
-
+# 🚀 LeetCode DSA Practice
 
 <p align="center">
   <img src="https://img.shields.io/badge/Problems_Solved-150%2B-brightgreen" />
