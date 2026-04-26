@@ -1,5 +1,5 @@
 """
-Problem: 199. Binary Tree Right Side View
+Problem: 938. Range Sum of BST
 Link: https://leetcode.com/problems/range-sum-of-bst/
 Difficulty: Easy
 Time Complexity: O(n)
