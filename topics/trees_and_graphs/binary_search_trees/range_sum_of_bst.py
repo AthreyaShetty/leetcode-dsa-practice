@@ -34,7 +34,7 @@ class Solution:
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         stack = [root]
-        asn = 0
+        ans = 0
         while stack:
             node = stack.pop()
             if low <= node.val <= high:
