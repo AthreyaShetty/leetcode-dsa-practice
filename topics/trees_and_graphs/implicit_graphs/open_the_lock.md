@@ -95,6 +95,22 @@ if neighbor not in seen: If the neighbor has not been visited yet (not in seen).
 seen.add(neighbor) Mark the neighbor as visited by adding it to the seen set.
 queue.append((neighbor, steps + 1)) Append the neighbor to the queue with an incremented step count (steps + 1).
 
+In the line where we are iterating over neighbors(node), it's important to understand that the neighbors() function returns a list of possible "neighboring" combinations. These combinations are the ones that are one step away from the current combination (node). So, when you iterate over neighbors(node), you're essentially visiting each of these neighboring combinations one by one.
+
+Detailed Explanation:
+1. for neighbor in neighbors(node):
+This line calls the neighbors() function with the current combination node.
+The neighbors() function generates a list of all possible neighboring combinations by changing each of the 4 digits of the current node by +1 or -1.
+It then returns this list to the loop, and the for loop iterates over each combination (each neighbor).
+2. if neighbor not in seen:
+For each neighbor generated, we check if it has already been visited by checking if it exists in the seen set.
+If it hasn't been seen before, the code proceeds to mark it as visited and add it to the queue. This ensures that we don't revisit the same combination again.
+3. seen.add(neighbor)
+This adds the neighbor to the seen set, which helps us keep track of all the combinations we've already processed. This prevents revisiting combinations and ensures that we don't get stuck in cycles.
+4. queue.append((neighbor, steps + 1))
+Finally, the new neighbor is added to the queue, with the updated steps + 1. This keeps track of how many steps it took to reach the neighbor.
+The queue is used for Breadth-First Search (BFS), ensuring we explore all possible combinations level by level, and the first time we reach the target, it will be with the minimum number of steps.
+
 
 Return -1 if Target is Not Reachable
 ```python
