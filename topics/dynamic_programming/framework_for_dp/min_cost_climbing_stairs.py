@@ -5,7 +5,7 @@ Difficulty: Easy
 Time Complexity: O(n)
     Memoizing the functin improves time complexcity from O(2^n) to O(n) where n is the length of the input array.
 
-Space Complexity: 
+Space Complexity: O(n)
 """
 # Solution 1
 
